@@ -21,7 +21,7 @@ defmodule DifferEcto do
 
   options are the same as `Differ.explain/4`
   """
-  @spec explain_field(Patchable.t(), Diffable.diff(), atom, (Diffable.operation() -> String.t()), revert: true) :: String.t()
+  @spec explain_field(Patchable.t(), atom, Diffable.diff(), (Diffable.operation() -> String.t()), revert: true) :: String.t()
   def explain_field(term, field, diff, cb, opts \\ []) do
     found = Enum.find(diff, fn op -> elem(op, 0) == field end)
     case found do
