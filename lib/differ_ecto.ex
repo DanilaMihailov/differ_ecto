@@ -29,4 +29,17 @@ defmodule DifferEcto do
       _ -> cb.({:eq, Map.get(term, field)})
     end
   end
+
+  defdelegate patch(obj, diff), to: Differ
+  defdelegate patch!(obj, diff), to: Differ
+  defdelegate revert(obj, diff), to: Differ
+  defdelegate revert!(obj, diff), to: Differ
+
+  defmacro __using__(_opts) do
+    quote do
+      alias Differ.Diffable
+      alias Differ.Patchable
+      alias DifferEcto.Diff
+    end
+  end
 end
