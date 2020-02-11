@@ -1,6 +1,6 @@
 # DifferEcto
 
-`Ecto.Type` for `Differ` diffs
+`Ecto.Type` for `Differ` (and some helpers)
 
 ## Installation
 
