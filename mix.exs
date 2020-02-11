@@ -24,7 +24,7 @@ defmodule DifferEcto.MixProject do
       {:differ, "~> 0.1.1"},
       {:ecto_sql, "~> 3.0"},
       # generating documentation (mix docs)
-      {:ex_doc, "~> 0.21", only: :dev, runtime: false},
+      {:ex_doc, "~> 0.21", only: :dev, runtime: false}
     ]
   end
 end
