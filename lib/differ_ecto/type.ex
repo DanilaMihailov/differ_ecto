@@ -1,4 +1,5 @@
 defmodule DifferEcto.Diff do
+  @moduledoc false
   use Ecto.Type
 
   def type, do: :list

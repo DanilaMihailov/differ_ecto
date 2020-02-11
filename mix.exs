@@ -7,7 +7,8 @@ defmodule DifferEcto.MixProject do
       version: "0.1.0",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      docs: docs()
     ]
   end
 
@@ -25,6 +26,15 @@ defmodule DifferEcto.MixProject do
       {:ecto_sql, "~> 3.0"},
       # generating documentation (mix docs)
       {:ex_doc, "~> 0.21", only: :dev, runtime: false}
+    ]
+  end
+
+  defp docs do
+    [
+      main: "readme",
+      extras: [
+        "README.md"
+      ]
     ]
   end
 end
