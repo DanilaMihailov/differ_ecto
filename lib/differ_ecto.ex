@@ -1,6 +1,8 @@
 defmodule DifferEcto do
   @moduledoc """
   Documentation for DifferEcto.
+
+  By calling `use` with this module, you get aliases to `Differ.Diffable`, `Differ.Patchable` and `DifferEcto.Diff`
   """
 
   @doc """
