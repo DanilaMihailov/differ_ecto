@@ -11,7 +11,7 @@ by adding `differ_ecto` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:differ_ecto, "~> 0.1.0"}
+    {:differ_ecto, "~> 0.1-pre"}
   ]
 end
 ```

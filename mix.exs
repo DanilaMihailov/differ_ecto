@@ -32,10 +32,21 @@ defmodule DifferEcto.MixProject do
     [
       {:differ, "~> 0.1.1"},
       {:ecto_sql, "~> 3.0"},
+
+      # :dev deps below
+
       # generating documentation (mix docs)
       {:ex_doc, "~> 0.21", only: :dev, runtime: false},
       # test coverage (mix coveralls.html or mix test --cover)
-      {:excoveralls, "~> 0.12.1", only: :test, runtime: false}
+      {:excoveralls, "~> 0.12.1", only: :test, runtime: false},
+      # documentation check (mix inch)
+      {:inch_ex, github: "rrrene/inch_ex", only: :docs, runtime: false},
+      # static analysis (mix dialyzer)
+      {:dialyxir, "~> 1.0.0-rc.7", only: [:dev], runtime: false},
+      # static analysis and style checks (mix credo --strict)
+      {:credo, "~> 1.2", only: [:dev, :test], runtime: false},
+      # mix docs.build
+      {:docs_getter, "~> 0.1-pre", only: :dev, runtime: false}
     ]
   end
 
