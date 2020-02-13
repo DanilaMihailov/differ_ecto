@@ -4,7 +4,7 @@ defmodule DifferEcto.MixProject do
   def project do
     [
       app: :differ_ecto,
-      version: "0.1.0-alpha.1",
+      version: "0.1.0-alpha.2",
       source_url: "https://github.com/DanilaMihailov/differ_ecto",
       homepage_url: "https://github.com/DanilaMihailov/differ_ecto",
       elixir: "~> 1.8",
