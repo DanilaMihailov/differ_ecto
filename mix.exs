@@ -31,7 +31,7 @@ defmodule DifferEcto.MixProject do
   defp deps do
     [
       {:differ, "~> 0.1.1"},
-      {:ecto_sql, "~> 3.0"},
+      {:ecto, "~> 3.3"},
 
       # :dev deps below
 
