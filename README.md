@@ -1,4 +1,5 @@
-# DifferEcto
+# DifferEcto [![Hex Version](https://img.shields.io/hexpm/v/differ_ecto.svg)](https://hex.pm/packages/differ_ecto) [![docs](https://img.shields.io/badge/docs-hexpm-blue.svg)](https://hexdocs.pm/differ_ecto/) [![Coverage Status](https://coveralls.io/repos/github/DanilaMihailov/differ_ecto/badge.svg?branch=master)](https://coveralls.io/github/DanilaMihailov/differ_ecto?branch=master)
+
 
 `Ecto.Type` for `Differ` (and some helpers)
 
