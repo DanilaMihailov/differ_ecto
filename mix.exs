@@ -54,7 +54,7 @@ defmodule DifferEcto.MixProject do
     [
       main: "readme",
       extras: [
-        "README.md"
+        "README.md": [title: "README"]
       ]
     ]
   end
